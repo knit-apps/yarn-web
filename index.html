@@ -11,36 +11,42 @@
 			  --grey: #404040;
 			  --orange: #eb693e;
 			  --pale-orange: #fcf3f0;
-			  --transparent-orange: #fcf3f0cc;
+			  --transparent-orange: #eb693ecc;
 			  --white: white;
 			  --black: darkslategrey;
 			}
 		  ::selection {
 			  background: var(--transparent-orange);
-				opacity: 0.1;
+				color: var(--white);
 			}
-			main ::selection {
-			  background: var(--orange);
-				color: white;
-		  }
-			h3::selection {
-			  background: var(--black);
+		  h3::selection {
+			  background: var(--white);
+				color: var(--orange);
 			}
 		  body {
-			  font-size: 16pt;
+			  font-size: 14pt;
 			  font-family: EB Garamond, Times, serif;
 				margin: 0;
+				margin-top: 6em;
 				color: var(--black);
 			}
 			main, header, footer {
-			  padding-left: 6em;
-			  padding-right: 6em;
-			}
-			main, footer {
-			  background: var(--pale-orange);
+			  padding-right: 4em;
+			  padding-left: 14em;
+				max-width: 72em;
 			}
 			footer {
 			  padding-bottom: 1em;
+			}
+			img {
+			  display: block;
+			  float: right;
+				margin-top: 3em;
+				margin-right: 1em;
+				margin-left: 1em;
+				border: solid var(--black);
+				border-width: 2px 2px 0 0;
+				padding: 0.5em 0.5em 0 0;
 			}
 			h1, h2 {
 			  margin-top: 0;
@@ -79,18 +85,13 @@
 			}
 			p, li {
 				max-width: 36em;
-				font-size: 1em;
+				font-size: 1.22em;
 				line-height: 1.4;
-				margin-bottom: 0;
 			}
 			p + p {
 			  text-indent: 1em;
 				margin-top: 0;
 				margin-bottom: 0;
-			}
-			main {
-				padding-top: 1em;
-				padding-bottom: 1em;
 			}
 		  sup {
 				position: relative;
@@ -106,9 +107,27 @@
 				padding-left: 0;
 				list-style-position: outside;
 			}
+			@media screen and (max-width: 1600px) {
+			  main, footer, header {
+				  padding-left: 4em;
+				  padding-right: 4em;
+				}
+			  img {
+				  float: none;
+				}
+			}
+			@media screen and (max-width: 1280px) {
+			  main, footer, header {
+				  padding-left: 2em;
+				  padding-right: 2em;
+				}
+			  img {
+				  float: none;
+				}
+			}
 			@media screen and (max-width: 940px) {
 				h2 {
-					font-size: 5em;
+					font-size: 4.5em;
 					line-height: 0.92em;
 				}
 				header {
@@ -116,8 +135,8 @@
 					margin-bottom: 1em;
 				}
 				main, header, footer {
-					padding-left: 6vw;
-					padding-right: 6vw;
+					padding-left: 3em;
+					padding-right: 1em;
 				}
 			}
 			@media screen and (max-width: 480px) {
@@ -141,22 +160,25 @@
 			<h2>Short stories from classic literature.</h2>
 		</header>
 		<main>
-		  <section>
-				<h3>So, what is it?</h3>
-				<p>An app that delivers you one short story at a time from our collection of classical literature.</p>
-			</section>
+		  	<section>
+				<h3>We've made an app that we hope will get you reading.</h3>
+				<img width="196px" height="420px" src="home-screenshot.png">
+				<p>Yarn brings you one short story at a time from our collection of classic literature. No choosing, no skipping. All you have to do is read.</p>
+				<img width="196px" height="420px" src="preference-screenshot.png">
+				<p>Oh, and let us know what you thought of the story when you're done.</p>
+		  	</section>
 			<section>
-				<h3>One story at a time?</h3>
-				<p>If your attention span is anything like ours, it's short. Social media, rolling news and being under the constant bombardment of ads probably has something to do with it. Our theory<sup name="#our-theory"><a href="#our-theory-footnote">1</a></sup> is that by giving ourselves (and you) a single story to read at any one time, we can hone our withering attention spans at something that actually matters – exploring the human condition through the medium of stories.</p>
-			</section></a>
-		  <section>
-				<h3>Okay, I'm in.</h3>
+			</section>
+		  <section >
+				<h3>Where to find it</h3>
 				<p>It's available now, <strong>for free</strong> from the Apple App Store for iOS and the Google Play Store for Android.</p>
 				<p>🍏 Yarn</p>
 				<p>🤖 Yarn</p>
 			</section>
 		  <section>
-				<h3>Tell me a bit more.</h3>
+			  	<h3>Why we bothered</h3>
+			  	<h4>One story at a time</h4>
+				<p>If your attention span is anything like ours, it's short. Social media, rolling news and being under the constant bombardment of ads probably has something to do with it. Our theory<sup name="#our-theory"><a href="#our-theory-footnote">1</a></sup> is that by giving ourselves (and you) a single story to read at any one time, we can hone our withering attention spans at something that actually matters – exploring the human condition through the medium of stories.</p>
 				<h4>Giving our community a personalised experience</h4>
 				<p>When you're done with a story you submit a (totally anonymous!) preference. This let's us do two things. Firstly, we can use these to improve the experience for everyone in our community of readers by separating the wheat from the chaff. Secondly, in the near-future, we will tailor the stories you recieve to try and balance what you like with the novelty of stories that lie just outside your usual taste.</p>
 				<h4>Using stories sourced from copyright-free materials</h4>
