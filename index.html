@@ -102,12 +102,6 @@
 				padding-left: 0;
 				list-style-position: outside;
 			}
-			ul {
-				list-style: none;
-			}
-			img {
-			  float: right;
-			}
 			main, header {
 				margin-left: 4em;
 				margin-right: 8em;
@@ -117,18 +111,12 @@
 				margin-top: auto;
 				margin-bottom: 1em;
 			}
-			.app-links a {
-				text-decoration: none;
+			ul img {
+				margin-top: 0.1em;
+				margin-bottom: 0.1em;
 			}
-			.app-link {
-				display: inline-block;
-				padding: 0.8em 1em;
-			  background: var(--pale-orange);
-				margin-left: 0;
-			}
-			.app-link:hover {
-			  background: var(--orange);
-			  color: var(--white);
+			.app-links {
+				list-style: none;
 			}
 			@media screen and (max-width: 1024px) {
 				h1 {
@@ -205,8 +193,8 @@
 				<h3>Available on your device's app store</h3>
 				<p>It's available now, <strong>for free</strong> from the Apple App Store for iOS and the Google Play Store for Android.</p>
 				<ul class="app-links">
-					<a href=""><li class="app-link">🍏 App Store</li></a>
-					<a href=""><li class="app-link">🤖 Google Play Store</li></a>
+					<li class="app-link apple"><a href=""><img height="50px" src="app-store.svg"></a></li>
+					<li class="app-link google"><a href=""><img height="50px" src="google-play-badge.png"></a></li>
 				</ul>
 			</section>
 		  <section>
