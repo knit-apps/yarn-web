@@ -1,3 +1,3 @@
-# [readyarn.com](readyarn.com)
+# [https://readyarn.com](readyarn.com)
 
 The website for the Yarn app.
