@@ -47,6 +47,12 @@
 			  font-size: 2em;
 				margin-bottom: .2em;
 			}
+			h1 a {
+				text-decoration: none;
+			}
+			h1 a:visited {
+				color: var(--black);
+			}
 			h2 {
 			  font-size: 5em;
 				line-height: 0.92;
@@ -117,6 +123,10 @@
 			}
 			.app-links {
 				list-style: none;
+				opacity: 0.3;
+			}
+			.app-links a {
+				cursor: not-allowed;
 			}
 			@media screen and (max-width: 1024px) {
 				h1 {
@@ -176,10 +186,10 @@
 	</head>
 	<body>
 	  <header>
-			<h1>Yarn</h1>
+			<h1><a href="//readyarn.com">Yarn</a></h1>
 			<h2>Short stories from classic literature.</h2>
 			<h5>By <a href="">Anton Hawthorne-Gonzalvez</a> and <a href="">Luke Ewer</a></h5>
-			<p class="copyright-notice">© Copyright Yarn 2021</p>
+			<p class="copyright-notice">© Copyright 2021</p>
 		</header>
 		<main>
 		  	<section>
@@ -191,10 +201,10 @@
 			</section>
 		  <section >
 				<h3>Available on your device's app store</h3>
-				<p>It's available now, <strong>for free</strong> from the Apple App Store for iOS and the Google Play Store for Android.</p>
+				<p>It's available <del>now</del> soon, <strong>for free</strong> from the App Store for iOS and the Google Play store for Android.</p>
 				<ul class="app-links">
-					<li class="app-link apple"><a href=""><img height="50px" src="app-store.svg"></a></li>
-					<li class="app-link google"><a href=""><img height="50px" src="google-play-badge.png"></a></li>
+					<li class="app-link apple"><a><img height="50px" src="app-store.svg"></a></li>
+					<li class="app-link google"><a><img height="50px" src="google-play-badge.png"></a></li>
 				</ul>
 			</section>
 		  <section>
@@ -207,7 +217,7 @@
 				<h4>Presented in a format with fewer distractions</h4>
 				<p>Our design philosophy, if you can call it that, is to keep things as simple, accessible, and beautiful as possible. Reading should be enjoyable for everyone.</p>
 				<h4>Using stories sourced from copyright-free materials</h4>
-				<p>People have been writing great literature since humans learnt to encode their stories into symbols. Not long after that<sup name="copyright-law-date"><a href="#copyright-law-date-footnote">1</a></sup>, copyright law was invented as a method by which those who wrote popular works could be rewarded.</p> 
+				<p>People have been writing great literature since humans learnt to encode their stories into symbols. Not long after that<sup id="copyright-law-date"><a href="//readyarn.com#copyright-law-date-footnote">1</a></sup>, copyright law was invented as a method by which those who wrote popular works could be rewarded.</p> 
 				<p>To help prevent the stagnation and monopoly of culture, copyright expires. This means that there is ever more great literature in the public domain. Great efforts are made to bring these works to the masses, through the likes of Project Gutenberg.</p>
 				<br>
 				<p>Standing on the shoulders of giants, we hope that Yarn will help people to access these works by presenting them in an attractive and captivating format.</p>
@@ -215,7 +225,7 @@
 			<footer>
 				<h3>Footnotes</h3>
 				<ol>
-					<li name="#copyright-law-date-footnote"><a href="#copyright-law-date">Okay, probably quite a long time after that.</a></li>
+					<li id="#copyright-law-date-footnote"><a href="//readyarn.com#copyright-law-date">Okay, probably quite a long time after that.</a></li>
 				</ol>
 			</footer>
 		</main>
