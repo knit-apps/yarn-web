@@ -112,7 +112,6 @@ main, header {
 }
 .screenshots {
 	background-color: var(--pale-orange);
-	text-align: center;
 }
 .screenshot {
 	margin: 1em;
