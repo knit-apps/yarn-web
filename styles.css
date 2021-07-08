@@ -1,5 +1,5 @@
 :root {
-	--grey: #505050;
+	--grey: slategrey;
 	--orange: #eb693e;
 	--pale-orange: #fcf3f0;
 	--light-orange: #ff8157;
@@ -11,22 +11,31 @@
 	background: var(--transparent-orange);
 	color: var(--white);
 }
-h3::selection {
-	background: var(--white);
-	color: var(--orange);
-}
 body {
-	display: flex;
+	margin: 0;
 	font-size: 12pt;
-	margin: 1em 0;
-	margin-top: 5em;
 	color: var(--black);
+	font-family: Montserrat;
+}
+h1, h2, h3, h4, h5 {
 	font-family: 'EB Garamond', Palatino Linotype, Book Antiqua, Palatino, serif
+
 }
 header {
-	width: 26em;
-	flex-grow: 0;
-	flex-shrink: 0;
+	background: var(--pale-orange);
+	padding-top: 6em;
+	padding-bottom: 18em;
+}
+.title {
+	display: flex;
+	align-items: center;
+}
+header h2 {
+	margin: 0;
+	margin-left: 0.5em;
+}
+footer {
+	margin-top: auto;
 }
 h1, h2 {
 	margin-top: 0;
@@ -43,15 +52,32 @@ h1 a {
 h1 a:visited {
 	color: inherit;
 }
+.logo {
+	display: flex;
+	justify-content: center;
+	margin-left: 3em;
+	position: relative;
+	top: -1em;
+}
+.intro {
+	margin-left: calc(3em + 310px);
+	font-size: 2em;
+	font-weight: 700;
+	font-style: italic;
+	line-height: 1.4;
+}
 h2 {
-	font-size: 5em;
+	font-size: 7em;
 	line-height: 0.92;
-	color: var(--orange);
+	max-width: 60rem;
+	margin-top: 0.4em;
 	margin-right: 0.5em;
-	margin-bottom: 0.5em;
+	margin-bottom: 1em;
+	color: var(--orange);
   background: -webkit-linear-gradient(var(--light-orange), var(--orange));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+				<h3>Quick reading for everyone</h3>
 }
 h3 {
 	font-size: 2em;
@@ -68,9 +94,13 @@ h3:first-child {
 	margin-top: 0;
 }
 h4 {
+	font-family: Montserrat;
 	margin-bottom: 0;
-	font-size: 1.3em;
+	font-size: 2.5em;
+	font-style: italic;
 	margin-top: 0.8em;
+	margin-right: 1em;
+	color: #606060;
 }
 h5 {
 	font-style: italic;
@@ -78,9 +108,9 @@ h5 {
 	font-weight: normal;
 }
 p, li {
-	max-width: 32em;
+	max-width: 60rem;
 	font-size: 1.22em;
-	line-height: 1.4;
+	line-height: 1.7;
 	margin-top: 0;
 }
 sup {
@@ -101,19 +131,22 @@ ol, ul {
 }
 main {
 	margin-top: 2.5em;
-}
-main, header {
-	margin-left: 4em;
-	margin-right: 4em;
-	margin-bottom: 4em;
+	padding-left: 360px;
 }
 .copyright-notice {
 	font-size: 1em;
 }
+.screenshots {
+	display: flex;
+	justify-content: center;
+	margin-top: -250px;
+	margin-bottom: 3em;
+}
 .screenshot {
 	margin: 1em;
 	margin-left: 0;
-	border: 1px var(--black) solid;
+	border: 5px var(--black) solid;
+	border-radius: 3em;
 }
 .store-link {
 	display: inline-block;
@@ -129,7 +162,7 @@ a.disabled {
 		font-size: 2em;
 	}
 	h2 {
-		font-size: 3.5em;
+		font-size: 6em;
 		line-height: 0.92em;
 	}
 	header {
@@ -159,7 +192,6 @@ a.disabled {
 	}
 	body {
 		display: block;
-		margin-top: 3em;
 	}
 	header {
 		width: initial;
