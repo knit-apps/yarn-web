@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px"
+	 height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<g id="Layer_1" display="none">
+	
+		<path display="inline" fill="#EB693E" stroke="#FFFFFF" stroke-width="3.1459" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M97.337,50C97.337,23.855,76.141,2.664,50,2.664C23.856,2.664,2.663,23.855,2.663,50c0,26.145,21.194,47.337,47.337,47.337
+		C76.141,97.338,97.337,76.146,97.337,50z"/>
+	<g display="inline">
+		<defs>
+			<path id="SVGID_1_" d="M97.173,50c0-26.055-21.12-47.173-47.173-47.173C23.948,2.827,2.826,23.946,2.826,50
+				c0,26.057,21.122,47.172,47.174,47.172C76.053,97.173,97.173,76.058,97.173,50z"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+	</g>
+</g>
+<g id="Layer_3">
+	
+		<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="4.2601" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		79.178,27.632 56.349,55.812 56.349,84.147 79.178,58.814 	"/>
+	
+		<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="4.2601" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		20.821,27.632 43.652,55.812 43.652,84.147 20.821,58.814 	"/>
+	<g>
+		
+			<path fill="none" stroke="#FFFFFF" stroke-width="3.1459" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M64.296,27.632L53.881,40.516c-2.28,2.821-6.012,2.821-8.292,0.001L35.167,27.632"/>
+	</g>
+</g>
+<g id="Layer_2">
+</g>
+</svg>
